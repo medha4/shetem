@@ -1,0 +1,258 @@
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  /*background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');*/
+  background-image: url('https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiLteHer4XWAhXI6oMKHbdMAJAQjRwIBw&url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F28684941%2Fandroid-default-white-background-hex-code&psig=AFQjCNHVLTJvL1Jady9T-Ow74s5dFLWwzA&ust=1504402912297426');  
+  background-position: center top;
+  background-size: cover;
+  margin: 0;
+  background-color: white;
+}
+
+a {
+    color: #CD17A8;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 100;
+}
+
+a:visited {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+/* mouse over link */
+a:hover {
+    color: #CD17A8;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 100;
+}
+
+/* selected link */
+a:active {
+    color: #CD17A8;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 100;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: 100;
+  color:#CD17A8;
+}
+
+.page-description {
+  border: 10px solid #CD17A8;
+  text-align: center;
+  color: #FFF;
+  padding: 30px;
+  background-color: #CD17A8;
+}
+.leadership{
+  border:1px solid #CD17A8;
+  text-align:center;
+  list-style-position:inside;
+  padding:30px;
+}
+
+.leadership li{
+  list-style-type: none;
+}
+
+.leadership li ul{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.leadership li ul li{
+  text-align: center;
+}
+
+.leadership h6{
+  color:#006385;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item .thumbnail {
+  border: 5px solid #FFF;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('thingy.png');
+  background-size: cover;
+  color: #CD17A8;
+  height: 650px;
+  text-shadow: 1px 1px 0.5px #CD17A8;
+}
+
+h4{
+  font-size: 15px;
+  color: #CD17A8;
+}
+
+h3{
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+h4 {
+  color: #CD17A8;
+}
+
+nav {
+  display: right-flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+header .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;  
+}
+
+
+footer .col-sm-9 {
+  color:#CD17A8;
+  display: flex;
+  justify-content: flex-end; 
+  text-align: center;
+}
+
+.contact-btn {
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact-btn a {
+  margin-right: 30px;
+  padding: 8px 18px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+
+}
+
+.contact-btn a:hover {
+  border-color:#CD17A8;
+  color: #CD17A8;
+  text-decoration: none;
+}
+.contact-btn a:focus {
+  border-color:#CD17A8;
+  color: #CD17A8;
+  text-decoration: none;
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+  text-decoration: none;
+}
+
+
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color:magenta;
+  text-decoration: none;
+}
+nav a:magenta{
+  color:deepskyblue;
+  text-decoration: none;
+}
+
+/*.dropdown {
+    float: left;
+    overflow: hidden;
+    display: right-flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 10px;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
